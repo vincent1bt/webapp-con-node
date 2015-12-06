@@ -1,0 +1,14 @@
+html
+  head
+    title Posts
+    link(rel="stylesheet" href="/style.css")
+  body
+    h1 New Post
+    form(method="POST" action="/posts")
+      label titulo 
+      input(type="text" name="title")
+      br
+      label descripcion
+      textarea(name="description")
+      input(type="submit" value="crear")
+    

@@ -1,0 +1,11 @@
+html
+  head
+    title Posts
+    link(rel="stylesheet" href="/style.css")
+  body
+    h1 Posts
+    each post in posts
+      a(href="/posts/#{post.id}/edit")= post.title
+      p= post.description
+      form(method="POST" action="/posts/#{post.id}?_method=DELETE")
+        button Delete

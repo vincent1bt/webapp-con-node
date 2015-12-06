@@ -1,0 +1,32 @@
+{
+  "name": "node_express_mongo",
+  "version": "1.0.0",
+  "description": "Una web app con node, express y mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent1bt/webapp-con-node.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "vicente rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincent1bt/webapp-con-node/issues"
+  },
+  "homepage": "https://github.com/vincent1bt/webapp-con-node#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "^1.10.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.9",
+    "supervisor": "^0.9.1"
+  }
+}
