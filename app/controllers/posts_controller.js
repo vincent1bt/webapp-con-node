@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var Post = require('./../models/post')
+
 //INDEX
 router.get('/', function(req, res) {
 	Post.find(function(err, doc) {
@@ -8,7 +9,8 @@ router.get('/', function(req, res) {
 		res.render('posts', { posts: doc })
 	})
 })
-//CREATE	
+
+//CREATE
 router.get('/new', function(req, res) {
 	res.render('new')
 })
@@ -24,6 +26,7 @@ router.post('/', function(req, res) {
 		res.redirect('/posts')
 	})
 })
+
 //DELETE
 router.delete("/:id", function(req,res) {
 	id = req.params.id

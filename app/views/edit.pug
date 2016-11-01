@@ -4,11 +4,10 @@ html
     link(rel="stylesheet" href="/style.css")
   body
     h1 Update Post
-    form(method="POST" action="/posts/#{post.id}?_method=PUT")
-      label titulo 
-      input(type="text" name="title" value="#{post.title}")
+    form(method="POST" action="/posts/" + post.id + "?_method=PUT")
+      label titulo
+      input(type="text" name="title" value=post.title)
       br
       label descripcion
       textarea(name="description")= post.description
       input(type="submit" value="Actualizar")
-    
